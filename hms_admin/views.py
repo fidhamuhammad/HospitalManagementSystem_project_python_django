@@ -82,12 +82,12 @@ def add_doctor(request):
 
          
 
-        # send_mail(
-        #     'username and password',
-        #     'Hi, your username is '+ str(user_name) +' and password is ' + password,
-        #     settings.EMAIL_HOST_USER,
-        #     [email]
-        # )
+        send_mail(
+            'username and password',
+            'Hi, your username is '+ str(user_name) +' and password is ' + password,
+            settings.EMAIL_HOST_USER,
+            [email]
+        )
     return render(request,'hms_admin/add_doctor.html', {'departments':departments,'error_message' : error_msg, 'succes_message' : success_msg})
 
 @auth_admin

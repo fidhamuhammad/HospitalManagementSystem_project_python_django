@@ -128,7 +128,7 @@
               </svg>
             </span>
 
-            <div class="avatar avatar-online">
+            <div class="avatar">
               <img src="{% static 'assets/img/avatars/adminimg.png' %}" alt
                 class="h-auto rounded-circle" style="height: 60px; width: 80px;"/>
             </div>
@@ -244,7 +244,7 @@
  
 
             <!-- navbar  -->
-            <a href="" class="btn btn-danger"  >Logout</a>
+            <a href="{% url 'common:index' %}" class="btn btn-primary">Logout</a>
 
 
           </div>

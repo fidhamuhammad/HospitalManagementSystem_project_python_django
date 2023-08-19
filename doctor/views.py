@@ -128,7 +128,7 @@ def patient_details(request,b_id):
     
     return render(request,'doctor/patient_details.html', {'booking_record' : booking_record,})
 
-def add_prescription(request,b_id):
+def add_prescription(request,b_id):        
     return render(request,'doctor/prescription.html', {'booking_id':b_id})
 
 def submit_prescription(request):
